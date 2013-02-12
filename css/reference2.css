@@ -1,0 +1,268 @@
+@import url(normalize.css);
+/* variables & mixins */
+/* BASE STYLES ======================================================== */
+/*changes selected type color*/
+/* line 44, ../sass/reference2.scss */
+::selection {
+  background: #52abce;
+  /* Safari */
+  color: #fff; }
+
+/* line 48, ../sass/reference2.scss */
+::-moz-selection {
+  background: #52abce;
+  /* Firefox */
+  color: #fff; }
+
+/* line 53, ../sass/reference2.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 57, ../sass/reference2.scss */
+body {
+  background-color: #fffbfd;
+  color: #223743;
+  font-family: droid-sans, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  text-shadow: 1px 1px 0px rgba(250, 250, 250, 0.3);
+  padding: 2em; }
+
+/* line 68, ../sass/reference2.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #52abce;
+  font-family: droid-serif, serif;
+  text-shadow: 1px 1px 1px rgba(26, 37, 44, 0.2); }
+
+/* line 74, ../sass/reference2.scss */
+a {
+  -webkit-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+  text-decoration: none;
+  color: #52abce; }
+  /* line 79, ../sass/reference2.scss */
+  a:hover {
+    text-decoration: none;
+    color: #66b5d4; }
+
+/* line 85, ../sass/reference2.scss */
+img {
+  maxWidth: 100%;
+  border: 10px solid white;
+  -webkit-box-shadow: #a7baa9 1px 1px 4px;
+  -moz-box-shadow: #a7baa9 1px 1px 4px;
+  box-shadow: #a7baa9 1px 1px 4px; }
+
+/* line 91, ../sass/reference2.scss */
+.imgsmall {
+  width: 60%; }
+
+/* line 95, ../sass/reference2.scss */
+small {
+  font-size: .7em;
+  color: #999; }
+
+/* line 100, ../sass/reference2.scss */
+big {
+  font-size: 1.5em; }
+
+/* line 104, ../sass/reference2.scss */
+table {
+  border-color: #76c672; }
+
+/* line 108, ../sass/reference2.scss */
+thead {
+  background-color: #76c672;
+  color: #fff;
+  text-shadow: none; }
+
+/* line 114, ../sass/reference2.scss */
+th {
+  font-size: 1em;
+  padding: .5em; }
+
+/* line 119, ../sass/reference2.scss */
+td {
+  line-height: 2em;
+  padding: .5em;
+  font-size: .8em; }
+
+/* line 125, ../sass/reference2.scss */
+caption {
+  font-size: .8em;
+  color: #76c672; }
+
+/* line 131, ../sass/reference2.scss */
+blockquote {
+  border: 0;
+  font-style: italic;
+  padding: 1.5em; }
+  /* line 132, ../sass/reference2.scss */
+  blockquote p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: #76c672; }
+
+/* line 142, ../sass/reference2.scss */
+cite {
+  font-size: .8em;
+  color: #666;
+  background-color: #d4ddd8;
+  padding: .4em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 150, ../sass/reference2.scss */
+q {
+  color: #666;
+  color: #76c672;
+  font-style: italic; }
+
+/* line 156, ../sass/reference2.scss */
+li {
+  line-height: 1.8em; }
+
+/* line 160, ../sass/reference2.scss */
+.wrap {
+  width: 90%;
+  padding: 2em;
+  margin: 0 auto; }
+
+/* line 166, ../sass/reference2.scss */
+.main {
+  width: 70%;
+  float: left; }
+
+/* line 171, ../sass/reference2.scss */
+.side {
+  width: 25%;
+  float: right;
+  clear: both; }
+  /* line 175, ../sass/reference2.scss */
+  .side .beer {
+    margin-top: 20px; }
+
+/* line 180, ../sass/reference2.scss */
+.sidebar {
+  background-color: #52abce;
+  padding: 1.25em;
+  color: #fff;
+  text-shadow: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px; }
+  /* line 186, ../sass/reference2.scss */
+  .sidebar a {
+    color: #fff;
+    font-family: droid-sans, serif; }
+    /* line 189, ../sass/reference2.scss */
+    .sidebar a:hover {
+      background-color: #fff; }
+  /* line 193, ../sass/reference2.scss */
+  .sidebar p {
+    margin: 0; }
+
+/* line 196, ../sass/reference2.scss */
+.recommended {
+  background-color: #52abce;
+  font-size: .9em;
+  margin: 0;
+  color: #fff;
+  text-shadow: none; }
+  /* line 200, ../sass/reference2.scss */
+  .recommended ul {
+    margin: 0; }
+  /* line 203, ../sass/reference2.scss */
+  .recommended li {
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: 1px solid #36768a; }
+    /* line 207, ../sass/reference2.scss */
+    .recommended li:hover {
+      background-color: #3ea1c8;
+      color: rgba(255, 255, 255, 0.8); }
+    /* line 211, ../sass/reference2.scss */
+    .recommended li a {
+      line-height: .5em;
+      color: #fff;
+      text-shadow: 1px 1px 0px rgba(250, 250, 250, 0.3); }
+
+/* line 221, ../sass/reference2.scss */
+.recommended2 {
+  font-size: .9em;
+  margin: 0;
+  color: #fff;
+  text-shadow: none; }
+  /* line 224, ../sass/reference2.scss */
+  .recommended2 h4 {
+    color: #52abce; }
+  /* line 227, ../sass/reference2.scss */
+  .recommended2 ul {
+    margin: 0; }
+  /* line 230, ../sass/reference2.scss */
+  .recommended2 li {
+    font-family: droid-sans, serif;
+    padding: 0.15em 0.5em;
+    line-height: 2em;
+    list-style-type: none;
+    border-bottom: 1px solid #9fbfce; }
+    /* line 236, ../sass/reference2.scss */
+    .recommended2 li:hover {
+      background-color: #e6e6e6; }
+    /* line 239, ../sass/reference2.scss */
+    .recommended2 li a {
+      font-family: droid-sans, serif;
+      line-height: .5em;
+      text-shadow: 1px 1px 0px rgba(250, 250, 250, 0.3); }
+
+/* line 249, ../sass/reference2.scss */
+.sideheader {
+  color: #fff;
+  margin: 0; }
+
+/* line 254, ../sass/reference2.scss */
+.buttons span {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #52abce;
+  color: #fff; }
+  /* line 261, ../sass/reference2.scss */
+  .buttons span:hover {
+    background-color: #3493b9; }
+
+/* line 266, ../sass/reference2.scss */
+.buttonsmall span {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: none;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #c9e5f0;
+  font-size: .8em;
+  color: #fff; }
+  /* line 274, ../sass/reference2.scss */
+  .buttonsmall span:hover {
+    background-color: #a1d2e5; }
+
+/* line 279, ../sass/reference2.scss */
+.beer {
+  margin-left: -2em;
+  font-size: .7em;
+  text-transform: uppercase;
+  color: #cccccc; }

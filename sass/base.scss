@@ -1,0 +1,798 @@
+@import "global";
+
+/* BASE STYLES ======================================================= */
+
+/*changes selected type color*/
+::selection {
+	background: $eduyellow2; /* Safari */
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: $eduyellow2; /* Firefox */
+	color: #fff;
+	text-shadow: none;
+}
+
+// Border box
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	background-color: $neutral;
+	color: $mainType;
+	@include typesans;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-shadow: 1px 1px 0px rgba(250,250,250, 0.3);
+	margin: 0;
+	transition:all .25s ease-in-out; 
+	-o-transition:all .25s ease-in-out; 
+	-moz-transition:all .25s ease-in-out; 
+	-webkit-transition:all .25s ease-in-out;
+	
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ body  { opacity: 0.99  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $edu2; 
+	line-height: 1.2em;
+	@include typesans;
+	font-weight: bold;
+	margin: .3em 0;
+}
+
+.desat {
+	color: desaturate($eduyellow2,20);
+}
+
+hr {
+	height: 1px;
+}
+
+a {
+	text-decoration: none;
+	@include colorTrans;
+	color: $eduyellow;
+	font-weight: bold;
+	&:hover {
+		text-decoration: none;
+		color: darken($eduyellow, 20);
+	}
+}
+
+img {
+	max-width: 100%;
+	@include space;
+	//@extend .one-edge-shadow;
+}
+
+.imgsmall {
+	width: 35%;
+	float: left;
+	display: block;
+}
+
+small {
+	//font-size: .8em;
+	line-height: 1.7em;
+	color: $link3;
+}
+
+big {
+	font-size: 1.5em;
+}
+
+table {
+	border-color: $accent;
+}
+
+thead {
+	background-color: $accent;
+	color: #fff;
+	text-shadow: none;
+}
+
+th {
+	font-size: 1em;
+	padding: .5em;
+}
+
+td {
+	line-height: 2em;
+	padding: .5em;
+	font-size: .8em;
+}
+
+caption {
+	font-size: .8em;
+	color: $accent;
+}
+
+
+blockquote {
+	p {
+		font-size: 1.3em;
+		line-height: 1.3em;
+		color: $accent;
+	}
+	border: 0;
+	font-style:italic;
+	padding: 1.5em;
+}
+
+cite {
+	font-size: .8em;
+	color: #666;
+	background-color: #d4ddd8;
+	padding: .4em;
+	@include border-radius(5px);
+}
+
+q {
+	color: #666;
+	color: $accent;
+	font-style: italic;
+}
+
+li{
+	//line-height: 1.5em;
+}
+ul {
+	li {
+		ul {margin-top: .2em;}
+	}
+}
+
+button {
+	@extend .trans;
+	font-size: 1em;
+	margin: .5em 0;
+	padding: .5em .8em;
+	text-shadow: none;
+	border: 0;
+	color: darken($eduyellow2,35);
+	background-color: $eduyellow2;
+	@include border-radius(5px);
+	&:hover {
+		background-color: darken($eduyellow2,10);
+	}
+}
+
+footer {
+	position: relative;
+	z-index: 18;
+	padding: .5em;
+	text-shadow: none;
+	clear: both;
+	height: 2em;
+	line-height: 2em;
+	height: 100px;
+	p {
+		color: darken($edu2,20);
+		font-size: .8em;
+		text-shadow: none;
+		width: 85%;
+		margin: 0 auto;
+	}
+	ul {
+		.bug {float: right;}
+		li{
+			font-size:.8em;
+			display: inline-block;
+			float: left;
+			padding-right: 1em;
+			a{
+				color: lighten($edu2,40);
+				&:hover {
+					color: lighten($mainColor,30);
+				}
+			}
+		}
+	}
+}
+#mainFooter {
+	font-size: .8em;
+	background-color: lighten($edu2,15);
+	width: 100%;
+	footer{
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+#wrapFooter{
+	clear: both
+}
+
+
+.smallLogo {
+	width: 140px;
+	float: right;
+	margin: .6em;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.wrap {
+	width: 85%;
+	margin: 0 auto -100px;
+}
+
+.main {
+	font-size: .85em;
+	//line-height: 1.4em;
+	width: $widthMain;
+	float: right;
+	padding: 0 0 0 2em;
+	margin-top: 5em;
+	position: relative;
+}
+
+
+.side {
+	position: fixed;
+	@extend .trans;
+	font-size: .7em;
+	top: 8em;
+	width: $widthSide;
+	float: left;
+	clear: both;
+	ul, li{
+		margin: 0;
+		padding: 0;
+	}
+	h3 {
+		
+		color: darken($edu2,10);
+		//margin: 0;
+		padding: 0 0 .5em 0;
+		//text-shadow: none; 
+		text-shadow: 0px 0px 2px rgba(255,255,255, 0.8);
+		text-transform:uppercase;
+		cursor: pointer;
+		//border-bottom: 2px solid $edu2;
+	}
+	.space {
+		margin-top: 2em;
+	}
+
+	.clearall {
+		float: none;
+		clear: all;
+		width: 100%;
+	}
+	.topicList, .chartList, .libraryList {
+		@extend .insetshadow;
+		position: relative;
+		//background-color: lighten($edu2,33);
+		background-color: $neutral2;
+		padding: .8em;
+		@include border-radius(5px);
+		margin: 0 0 1.5em 0;
+		h3 {margin: .2em 0 0 0;}
+		//border: 1px solid $neutral;
+	}
+	
+}
+
+.overlay {
+	background-color: #fff;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index: 20;
+	display:none;
+}
+
+.toggle {
+	top: .5em;
+	z-index: 500;
+	cursor: pointer;
+	.icon {
+		display: block;
+		width: .9em;
+		height: .5em;
+		padding-bottom: .2em;
+		//margin-top: .2em;
+		border-top: 0.5em double $edu2; //DDC067
+		border-bottom: 0.15em solid $edu2;
+		float: right;
+	}
+}
+
+.last-item {
+	background-color: red;
+}
+
+.sideList {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-shadow: none;
+	.currentTopic {
+		background-color: $eduyellow2;
+		color: darken($eduyellow2,35);
+		//color: darken($link3,35);
+		font-weight:bold;
+		text-shadow: 0px 0px 4px rgba(250,250,250, 0.5);
+		&:hover {
+			background-color: lighten($eduyellow2,08);
+			padding: .6em .5em;
+			& { 
+				color: darken($eduyellow2,40);
+			}
+		}
+	}
+	a{
+		color: lighten($link3,5);
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	span {
+		color: lighten($link3,0);
+	}
+	li {
+		@extend .trans;
+		margin: 0;
+		padding: .6em .5em;
+		line-height: 1.3em;
+		list-style-type: none;
+		background-color: lighten($edu2,40);
+		border-bottom: 1px solid #dbdbdb;
+		cursor: pointer;
+		//color: lighten($link3,5);
+		color: darken($eduyellow2,12);
+		&:hover {
+			//color:darken($link3,05);
+			color: darken($eduyellow2,20);
+			background-color: lighten($edu2,45);
+			padding-left: .65em;
+		}
+		&.inactive {
+			color: lighten($link3,0);
+			//background-color: lighten($edu2,33);
+			background-color: $neutral2;
+			cursor: default;
+			// padding-left: 0;
+			&:hover {
+				padding-left: .5em;
+			}
+		}
+	}
+	.currentNote {
+		background-color: $mainColor;
+		color: #fff;
+		&:hover {
+			background-color: $mainColor;
+			color: #fff;
+		}
+	}
+	.currentCat {
+		background-color: $mainColor;
+		color: #fff;
+		&:hover {
+			background-color: $mainColor;
+			color: #fff;
+		}
+	}
+
+}
+
+.listtitle {
+	@include typesans;
+	color: $link3;
+	margin: 0;
+}
+
+.sideheader {
+	color: #fff;
+	margin: 0;
+}
+
+.nextbtn {
+	float: right;
+	text-shadow: 0px 0px 4px rgba(250,250,250, 0.4);
+}
+
+.prevbtn {
+	color: $eduyellow2;
+	background-color: $neutral;
+	&:hover {
+		color: darken($eduyellow,25);
+		background-color: #fff;
+	}
+}
+
+.pageControls {
+	border-top: 1px solid $eduyellow2;
+	padding: 1em 0;
+	margin: 2em 0 0 0;
+	clear: both;
+	height:125px;
+}
+
+.beer {
+	margin-left: -2em;
+	font-size: .7em;
+	text-transform:uppercase;
+	color: lighten(#999, 20);
+}
+.headerWrap {
+	width: 85%;
+	margin: 0 auto;
+	.closemsg {
+		margin: -.7em 0 0 0;
+		float: right;
+		cursor: pointer;
+		color: $edu1;
+		&:hover {
+			color: $eduyellow2;
+		}
+	}
+}
+.status {
+	position: fixed;
+	z-index: 40;
+	height: 5em;
+	line-height: 1.5em;
+	padding: .2em;
+	margin: 0 0 2em 0;
+	left: 0;
+	color: $edu1;
+	font-size: .8em;
+	width: 100%;
+	background-color: $headers;
+	text-shadow: none;
+	box-shadow: 0 2px 10px $shadowz;
+	-moz-box-shadow: 0 2px 10px $shadowz;
+	-webkit-box-shadow: 0 2px 10px $shadowz;
+	.smallLogo {
+		padding: .6em 0 0 0;
+	}
+	.casename {
+		width: 70%;
+		font-weight: 800;
+		font-size: 1.2em;
+		color: $eduyellow2;
+		float: left;
+		padding: .7em 0 0 0;
+	}
+	.lessonTitle {
+		width: 70%;
+		padding-left: .2em;
+		float: left;
+		clear: both;
+	}
+	.chapter {
+		float: right;
+		a {
+			@include border-radius(5px);
+			color: white(.5);
+			font-size:.8em;
+			margin: 0 .1em;
+			margin-top:-10px;
+			padding: .4em .6em;
+			&:hover {
+				background-color: darken($link,10);
+			};
+		}
+	}
+}
+
+// .closemsg {
+// 	float: right;
+// 	cursor: pointer;
+// 	color: $edu1;
+// 	&:hover {
+// 		color: $eduyellow2;
+// 	}
+// 	.yup {
+// 		float: left;
+// 		color: #fff;
+// 	}
+// }
+
+.leaving {
+	display: none;
+	width: 20em;
+	line-height: 1.4em;
+	text-shadow: none;
+	//text-shadow: 1px 1px 0px rgba(250,250,250, 0.3);
+	@include border-radius(5px);
+	background-color: $headers;
+	color: lighten($link,20);
+	float: right;
+	position: fixed;
+	z-index: 40;
+	padding: 1.2em;
+	color: #fff;
+	font-size: .8em;
+	top: 6em;
+	right: 50px;
+	p {
+		margin: 0;
+	}
+	.yupnope {
+		@extend .trans;
+		float: left;
+		margin: .5em 0 0 1em;
+		//background-color: darken($headers,15);
+		color: darken($eduyellow2,35);
+		font-weight:bold;
+		text-shadow: 0px 0px 4px rgba(250,250,250, 0.5);
+		background-color: $eduyellow2;
+		padding: .3em .8em;
+		@include border-radius(5px);
+		//color: #fff;
+		//text-shadow: none;
+		&:hover {
+			background-color: darken($eduyellow2,15);
+			color: darken($eduyellow2,35);
+		}
+	}
+	.yup {
+		float: left;
+		width: 45%;
+		text-align: center;
+		margin-left: 0;
+	}
+	.nope {
+		float: right;
+		width: 45%;
+		text-align: center;
+	}
+}
+
+span.prevbtn {
+	a {
+		color:$eduyellow2;
+		&:hover {color: darken($eduyellow2,10);}
+	}
+	padding: 0 0 0 1em;
+}
+
+.definition {
+	color: $eduyellow2;
+	cursor: pointer;
+}
+
+.popup {
+	z-index: 99;
+	font-size: .8em;
+	border: 12px solid rgb(255, 255, 255);
+	border: 12px solid rgba(255, 255, 255, .4);
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	line-height: 1.4em;
+	text-shadow: none;
+	position: fixed;
+	//top: 10%;
+	//left: 25%;
+	width: 30%;
+	background-color: #333;
+	color: #e8eadc;
+	padding: 1em;
+	@include border-radius(5px);
+	display: none;
+	span {
+		color: $eduyellow2;
+	}
+}
+.screen5 {
+	width: 600px;
+	cursor: pointer;
+}
+.hidepop {
+	cursor: pointer;
+	color: $eduyellow2;
+	font-weight: bold;
+}
+
+.footnote {
+	padding: 1em;
+	background-color: lighten($link3,43);
+	@include border-radius(5px);
+	text-shadow: 1px 1px 0px rgba(250,250,250, 0.3);
+	margin: 0 0 3em;
+	table {
+		font-weight: 400;
+		margin: 10px 0 0;
+		padding: .5em 1.2em;
+		td {
+			vertical-align: top;
+			line-height: 1.4em;
+			font-size: 0.75em;
+			color: #777;
+			padding-left: 0;
+		}
+	}
+	h3 {
+		margin: 0;
+		color: $link3;
+		text-shadow: 1px 1px 0px rgba(250,250,250, 0.3);
+	}
+	a {
+		color: $eduyellow2;
+		&:hover {
+			color: lighten($headers,20);
+		}
+	}
+	em {
+		color: $headers;
+	}
+}
+
+.footnumber {
+	font-size: .7em;
+	a { 
+		color: #999; 
+		padding: 0 .2em;
+	}
+	vertical-align: super;
+}
+
+.lessonBody {
+	min-height: 300px;
+	margin-top: 1em;
+	line-height: 1.5em;
+	h1 {
+		margin: 0;
+	}
+}
+
+// .closemsg {
+// 	float: right;
+// 	cursor: pointer;
+// 	color: $edu1;
+// 	&:hover {
+// 		color: $eduyellow2;
+// 	}
+// 	.yup {
+// 		float: left;
+// 		color: #fff;
+// 	}
+// }
+
+/* CHART STYLES ======================================================== */
+
+@mixin typeChartItem {
+	font-family: droid-sans, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+	letter-spacing: .2em;
+}
+
+.chart {
+	z-index: 20;
+	position: absolute;
+	top: 1em;
+	// right: -50em;
+	background-color: $mainColor;
+	width: 100%;
+	min-height: 38em;
+	padding: 1em;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: none;
+	display: none;
+
+	header {
+		border-bottom: 1px solid #fff;
+		span {
+			float: right;
+			display:block;
+			width: 20px;
+			height: 20px;
+			color: $mainColor;
+			background-color: #fff;
+			line-height: 19px;
+			text-align: center;
+			@include border-radius(10px);
+			font-size: 15px;
+			cursor: pointer;
+		}
+
+	}
+
+}
+
+
+
+.library {
+	z-index: 20;
+	position: absolute;
+	top: 1em;
+	// right: -50em;
+	background-color: $mainColor;
+	width: 100%;
+	min-height: 38em;
+	padding: 1em;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: none;
+	display: none;
+
+	header {
+		border-bottom: 1px solid #fff;
+		span {
+			float: right;
+			display:block;
+			width: 20px;
+			height: 20px;
+			color: $mainColor;
+			background-color: #fff;
+			line-height: 19px;
+			text-align: center;
+			@include border-radius(10px);
+			font-size: 15px;
+			cursor: pointer;
+		}
+	}
+}
+
+.pdfitem, .linkitem {
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: 0.75em center;
+	@include transitions;
+	display: block;
+	padding: 0.5em 0.5em 0.5em 3.5em;
+	margin:  0.5em 0 0 0;
+	color: black;
+	cursor: pointer;
+	a {
+		p {
+			padding: 0;
+			margin: 0;
+			font-size: 0.85em;
+			color: $mainColor;
+		}
+		h5 {
+			padding: 0;
+			margin: 0.2em 0 -0.2em 0;
+			font-size: 1em;
+			color: $link3;
+		}
+	}
+}
+.pdfitem {
+	background-image: url("../img/pdficon2.png");
+}
+.linkitem {
+	background-image: url("../img/linkicon2.png");
+}
+
+.openUp {
+	right: -1em; 
+}
+
+.lessonBody {
+	h3 {
+		color: $mainColor;
+		font-size: 1.27em;
+		margin: .5em 0 .2em;
+		padding-bottom: 0em;
+	}
+	h4 {
+		color: $mainColor;
+		margin: .5em 0 .0em;
+		padding-bottom: 0em;
+	}
+}
+
+
+/* Make me whole again! */
+
+
+
+

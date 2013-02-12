@@ -1,0 +1,296 @@
+@import "normalize.css";
+@import "compass";
+@import "compass/layout/sticky-footer";
+
+/* variables & mixins */
+
+$widthMain: 70%;
+$widthSide: 25%;
+$corner: 5px;
+$mainType: #223743;
+$accent: #76c672;
+$link: #52abce;
+$link2: #9fbfce;
+$footerHeight: 30px;
+$maxWidth: 80%;
+$mainColor: #373d45;
+$edu1: #31214c;
+$neutral: #fffbfd;
+
+@mixin typeserif {
+	font-family: droid-serif, serif;
+}
+
+@mixin typesans {
+	font-family: droid-sans, sans-serif;
+}
+
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+
+
+/* BASE STYLES ======================================================== */
+
+/*changes selected type color*/
+::selection {
+	background: $link; /* Safari */
+	color: #fff;
+	}
+::-moz-selection {
+	background: $link; /* Firefox */
+	color: #fff;
+}
+// Border box
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+body {
+	background-color: $neutral;
+	color: $mainType;
+	@include typesans;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	text-shadow: 1px 1px 0px rgba(250,250,250, 0.3);
+	padding: 2em;
+	//background-image: url('../img/grid.png');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $link;
+	@include typeserif;
+	text-shadow: 1px 1px 1px rgba(26,37,44, 0.2);
+}
+
+a {
+	-webkit-transition: color .25s ease-out;
+	transition: color .25s ease-out;
+	text-decoration: none;
+	color:$link;
+	&:hover {
+		text-decoration: none;
+		color: lighten($link, 5);
+	};
+}
+
+img {
+	maxWidth: 100%;
+	border: 10px solid #fff;
+	@include box-shadow(#a7baa9 1px 1px 4px);
+}
+
+.imgsmall {
+	width: 60%;
+}
+
+small {
+	font-size: .7em;
+	color: #999;
+}
+
+big {
+	font-size: 1.5em;
+}
+
+table {
+	border-color: $accent;
+}
+
+thead {
+	background-color: $accent;
+	color: #fff;
+	text-shadow: none;
+}
+
+th {
+		font-size: 1em;
+		padding: .5em;
+	}
+
+td {
+	line-height: 2em;
+	padding: .5em;
+	font-size: .8em;
+}
+
+caption {
+	font-size: .8em;
+	color: $accent;
+}
+
+
+blockquote {
+	p {
+		font-size: 1.3em;
+		line-height: 1.3em;
+		color: $accent;
+		}
+	border: 0;
+	font-style:italic;
+	padding: 1.5em;
+}
+
+cite {
+	font-size: .8em;
+	color: #666;
+	background-color: #d4ddd8;
+	padding: .4em;
+	@include border-radius(5px);
+}
+
+q {
+	color: #666;
+	color: $accent;
+	font-style: italic;
+}
+
+li{
+	line-height: 1.8em;
+}
+
+.wrap {
+	width: 90%;
+	padding: 2em;
+	margin: 0 auto;
+}
+
+.main {
+	width: 70%;
+	float: left;
+}
+
+.side {
+	width: 25%;
+	float: right;
+	clear: both;
+	.beer {
+		margin-top:20px;
+	}
+}
+
+.sidebar {
+	background-color: $link;
+	padding: 1.25em;
+	color:#fff;
+	text-shadow: none;
+	@include border-radius(15px);
+	a {
+		color: #fff;
+		font-family: droid-sans, serif;
+		&:hover {
+			background-color: #fff;
+		}
+	}
+	p {margin: 0;}
+}
+
+.recommended {
+	background-color: $link;
+	font-size: .9em;
+	margin: 0;
+	ul {
+		margin: 0;
+	}
+	li {
+		list-style-type: none;
+		padding: 5px;
+		border-bottom: 1px solid #36768a;
+		&:hover {
+			background-color:darken($link, 05);
+			color:rgba(255,255,255,0.8);
+		}
+		a {
+			line-height: .5em;
+			color: #fff;
+				text-shadow: 1px 1px 0px rgba(250,250,250, 0.3);
+		}
+	}
+	color:#fff;
+	text-shadow: none;
+}
+
+.recommended2 {
+	font-size: .9em;
+	margin: 0;
+	h4 {
+		color: $link;
+	}
+	ul {
+		margin: 0;
+	}
+	li {
+		font-family: droid-sans, serif;
+		padding: .15em .5em;
+		line-height: 2em;
+		list-style-type: none;
+		border-bottom: 1px solid $link2;
+		&:hover {
+			background-color:lighten(#000, 90);
+		}
+		a {
+			font-family: droid-sans, serif;
+			line-height: .5em;
+				text-shadow: 1px 1px 0px rgba(250,250,250, 0.3);
+		}
+	}
+	color:#fff;
+	text-shadow: none;
+}
+
+.sideheader {
+	color: #fff;
+	margin: 0;
+}
+
+.buttons span{
+	@include border-radius(5px);
+	text-shadow: none;
+	display: inline-block;
+	 padding: 10px  20px;
+	 background: $link;
+	 color: #fff;
+	 &:hover {
+	 	background-color: darken($link, 10);
+	 }
+}
+
+.buttonsmall span{
+	@include border-radius(5px);
+	text-shadow: none;
+	display: inline-block;
+	padding: 5px  10px;
+	background-color: lighten($link, 30);
+	font-size: .8em;
+	color: #fff;
+	&:hover {
+		background-color: lighten($link, 20);
+	 }
+}
+
+.beer {
+	margin-left: -2em;
+	font-size: .7em;
+	text-transform:uppercase;
+	color: lighten(#999, 20);
+}
+
+
+
+
+
+
+
+
+
+
+
+

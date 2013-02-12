@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PainEDU: Assessment Manager</title>
+	
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/> -->
+	<link rel="stylesheet" type="text/css" media="screen" href="js/jquery-ui-1.9.2/css/mappc_2/jquery-ui-1.9.2.custom.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/lesson.css" />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/modernizr-2.5.3.js"></script>
+		<style>
+			body .vidWSummary .summary {
+				display: block;
+			}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="status">
+			<div class="headerWrap">
+				<div class="casename"><strong>PainEDU: Assessment Manager</strong></div> 
+				<div class="lessonTitle"> The role of extended-release/long-acting opioids in chronic pain management</div>
+				<p class="closemsg">Exit Lesson</p>
+			</div>
+		</div>
+		<div class="wrap">
+
+			<div class="main">
+
+			</div><!-- end main -->
+		<!-- <div class="popup">
+			<span class="definiton"><strong>Moustache: </strong></span> Stuff here
+		</div> -->
+		<div id="wrapFooter"></div>
+	</div><!-- end wrap -->
+	
+
+	<div id="mainFooter">
+		<footer>
+			<ul>
+				<li>About</li>
+				<li>Privacy Policy</li>
+				<li>FAQ</li>
+				<li>Support</li>
+				<li class="bug"><img src="img/bug.png" alt="An Inflexxion Solution" class="smallLogo"></li>
+			</ul>
+			<p>&#169; 2013 Inflexxion, Inc.</p>
+		</footer>
+	</div>
+	
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+  chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+
+
+    $("body").on("mouseover",".pdfitem, .linkitem", function(){
+    	$(this).css('background-color','#e8e3cc');
+    });
+    $("body").on("mouseout",".pdfitem, .linkitem", function(){
+    	$(this).css('background-color','white');
+    });
+    $("body").on("click",".pdfitem, .linkitem", function(){
+    	$(this).css('background-color','white');
+    });
+
+    $(".closemsg").click(function(){
+    	$(".leaving").fadeToggle();
+    });
+
+    $('.side h3').click(function(){
+    	$(this).siblings('.sideList').slideToggle();
+    });
+
+    $(".side ul li:last-child").addClass("last-item");
+
+    </script>
+
+</body>
+</html>

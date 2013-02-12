@@ -1,0 +1,1547 @@
+@import url(normalize.css);
+/* line 10, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%; }
+
+/* line 12, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.wrap {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px; }
+  /* line 18, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+  .wrap #wrapFooter {
+    height: 100px; }
+
+/* line 20, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#mainFooter {
+  clear: both;
+  position: relative;
+  height: 100px; }
+
+/* line 85, ../sass/global.scss */
+.riskrewardgradient, .twoColStandard .col1, .twoColStandard .col2 {
+  background: #e7eddb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e7eddb 0%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e7eddb), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e7eddb 0%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e7eddb 0%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e7eddb 0%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #e7eddb 0%, #ffffff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradientStart', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 98, ../sass/global.scss */
+.insetshadow, .side .topicList, .side .chartList, .side .libraryList {
+  -moz-box-shadow: inset 0 0 8px #dedfdb;
+  -webkit-box-shadow: inset 0 0 8px #dedfdb;
+  box-shadow: inset 0 0 8px #dedfdb; }
+
+/* line 104, ../sass/global.scss */
+.outershadow {
+  box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55);
+  -o-box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55); }
+
+/* line 111, ../sass/global.scss */
+.lettershadow, .progNote {
+  box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55), #f3cb68 0 0 180px inset;
+  -moz-box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55), #f3cb68 0 0 180px inset;
+  -o-box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55), #f3cb68 0 0 180px inset;
+  -webkit-box-shadow: -3px 6px 30px rgba(0, 0, 0, 0.55), #f3cb68 0 0 180px inset; }
+
+/* line 118, ../sass/global.scss */
+.noshadow, .letterhead img {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+/* line 137, ../sass/global.scss */
+.trans, button, .side, .sideList li, .leaving .yupnope, .videoQuestion {
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out; }
+
+/* line 144, ../sass/global.scss */
+.gradientz {
+  background: #c9b37c;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c9b37c 0%, #caac5d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c9b37c), color-stop(100%, #caac5d));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #c9b37c 0%, #caac5d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #c9b37c 0%, #caac5d 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #c9b37c 0%, #caac5d 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #c9b37c 0%, #caac5d 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9b37c', endColorstr='#caac5d',GradientType=0 );
+  /* IE6-9 */ }
+
+/* line 155, ../sass/global.scss */
+.one-edge-shadow {
+  -webkit-box-shadow: 0 8px 6px -6px #b3b29f;
+  -moz-box-shadow: 0 8px 6px -6px #b3b29f;
+  box-shadow: 0 8px 6px -6px #b3b29f; }
+
+/* BASE STYLES ======================================================= */
+/*changes selected type color*/
+/* line 6, ../sass/base.scss */
+::selection {
+  background: #caac5d;
+  /* Safari */
+  color: #fff;
+  text-shadow: none; }
+
+/* line 11, ../sass/base.scss */
+::-moz-selection {
+  background: #caac5d;
+  /* Firefox */
+  color: #fff;
+  text-shadow: none; }
+
+/* line 18, ../sass/base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 20, ../sass/base.scss */
+body {
+  background-color: #fbffff;
+  color: #303a46;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-shadow: 1px 1px 0px rgba(250, 250, 250, 0.3);
+  margin: 0;
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 37, ../sass/base.scss */
+  body {
+    opacity: 0.99; } }
+/* line 40, ../sass/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #989b8e;
+  line-height: 1.2em;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  margin: 0.3em 0; }
+
+/* line 48, ../sass/base.scss */
+.desat {
+  color: #b4a272; }
+
+/* line 52, ../sass/base.scss */
+hr {
+  height: 1px; }
+
+/* line 56, ../sass/base.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+  color: #ddc067;
+  font-weight: bold; }
+  /* line 61, ../sass/base.scss */
+  a:hover {
+    text-decoration: none;
+    color: #b59329; }
+
+/* line 67, ../sass/base.scss */
+img {
+  max-width: 100%;
+  margin-top: 1.5em;
+  clear: both; }
+
+/* line 73, ../sass/base.scss */
+.imgsmall {
+  width: 35%;
+  float: left;
+  display: block; }
+
+/* line 79, ../sass/base.scss */
+small, .cap2 {
+  line-height: 1.7em;
+  color: #888780; }
+
+/* line 85, ../sass/base.scss */
+big {
+  font-size: 1.5em; }
+
+/* line 89, ../sass/base.scss */
+table {
+  border-color: #76c672; }
+
+/* line 93, ../sass/base.scss */
+thead {
+  background-color: #76c672;
+  color: #fff;
+  text-shadow: none; }
+
+/* line 99, ../sass/base.scss */
+th {
+  font-size: 1em;
+  padding: .5em; }
+
+/* line 104, ../sass/base.scss */
+td {
+  line-height: 2em;
+  padding: .5em;
+  font-size: .8em; }
+
+/* line 110, ../sass/base.scss */
+caption {
+  font-size: .8em;
+  color: #76c672; }
+
+/* line 116, ../sass/base.scss */
+blockquote {
+  border: 0;
+  font-style: italic;
+  padding: 1.5em; }
+  /* line 117, ../sass/base.scss */
+  blockquote p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: #76c672; }
+
+/* line 127, ../sass/base.scss */
+cite {
+  font-size: .8em;
+  color: #666;
+  background-color: #d4ddd8;
+  padding: .4em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 135, ../sass/base.scss */
+q {
+  color: #666;
+  color: #76c672;
+  font-style: italic; }
+
+/* line 146, ../sass/base.scss */
+ul li ul {
+  margin-top: .2em; }
+
+/* line 150, ../sass/base.scss */
+button {
+  font-size: 1em;
+  margin: 0.5em 0;
+  padding: 0.5em 0.8em;
+  text-shadow: none;
+  border: 0;
+  color: #58481d;
+  background-color: #caac5d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 160, ../sass/base.scss */
+  button:hover {
+    background-color: #b8963c; }
+
+/* line 165, ../sass/base.scss */
+footer {
+  position: relative;
+  z-index: 18;
+  padding: .5em;
+  text-shadow: none;
+  clear: both;
+  height: 2em;
+  line-height: 2em;
+  height: 100px; }
+  /* line 174, ../sass/base.scss */
+  footer p {
+    color: #65675c;
+    font-size: .8em;
+    text-shadow: none;
+    width: 85%;
+    margin: 0 auto; }
+  /* line 182, ../sass/base.scss */
+  footer ul .bug {
+    float: right; }
+  /* line 183, ../sass/base.scss */
+  footer ul li {
+    font-size: .8em;
+    display: inline-block;
+    float: left;
+    padding-right: 1em; }
+    /* line 188, ../sass/base.scss */
+    footer ul li a {
+      color: #fbfbfa; }
+      /* line 190, ../sass/base.scss */
+      footer ul li a:hover {
+        color: #7d8998; }
+
+/* line 197, ../sass/base.scss */
+#mainFooter {
+  font-size: .8em;
+  background-color: #bdbfb7;
+  width: 100%; }
+  /* line 201, ../sass/base.scss */
+  #mainFooter footer {
+    width: 85%;
+    margin: 0 auto; }
+
+/* line 206, ../sass/base.scss */
+#wrapFooter {
+  clear: both; }
+
+/* line 211, ../sass/base.scss */
+.smallLogo {
+  width: 140px;
+  float: right;
+  margin: .6em;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+/* line 220, ../sass/base.scss */
+.wrap {
+  width: 85%;
+  margin: 0 auto -100px; }
+
+/* line 225, ../sass/base.scss */
+.main {
+  font-size: .85em;
+  width: 65%;
+  float: right;
+  padding: 0 0 0 2em;
+  margin-top: 5em;
+  position: relative; }
+
+/* line 236, ../sass/base.scss */
+.side {
+  position: fixed;
+  font-size: .7em;
+  top: 8em;
+  width: 25%;
+  float: left;
+  clear: both; }
+  /* line 244, ../sass/base.scss */
+  .side ul, .side li {
+    margin: 0;
+    padding: 0; }
+  /* line 248, ../sass/base.scss */
+  .side h3 {
+    color: #7f8373;
+    padding: 0 0 0.5em 0;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    cursor: pointer; }
+  /* line 259, ../sass/base.scss */
+  .side .space {
+    margin-top: 2em; }
+  /* line 263, ../sass/base.scss */
+  .side .clearall {
+    float: none;
+    clear: all;
+    width: 100%; }
+  /* line 268, ../sass/base.scss */
+  .side .topicList, .side .chartList, .side .libraryList {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: .8em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 0 1.5em 0; }
+    /* line 276, ../sass/base.scss */
+    .side .topicList h3, .side .chartList h3, .side .libraryList h3 {
+      margin: 0.2em 0 0 0; }
+
+/* line 282, ../sass/base.scss */
+.overlay {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  display: none; }
+
+/* line 291, ../sass/base.scss */
+.toggle {
+  top: .5em;
+  z-index: 500;
+  cursor: pointer; }
+  /* line 295, ../sass/base.scss */
+  .toggle .icon {
+    display: block;
+    width: .9em;
+    height: .5em;
+    padding-bottom: .2em;
+    border-top: 0.5em double #989b8e;
+    border-bottom: 0.15em solid #989b8e;
+    float: right; }
+
+/* line 307, ../sass/base.scss */
+.last-item {
+  background-color: red; }
+
+/* line 311, ../sass/base.scss */
+.sideList {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-shadow: none; }
+  /* line 316, ../sass/base.scss */
+  .sideList .currentTopic {
+    background-color: #caac5d;
+    color: #58481d;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgba(250, 250, 250, 0.5); }
+    /* line 322, ../sass/base.scss */
+    .sideList .currentTopic:hover {
+      background-color: #d4bc7c;
+      padding: 0.6em 0.5em; }
+      /* line 325, ../sass/base.scss */
+      .sideList .currentTopic:hover {
+        color: #453816; }
+  /* line 330, ../sass/base.scss */
+  .sideList a {
+    color: #94938d; }
+  /* line 333, ../sass/base.scss */
+  .sideList ul {
+    margin: 0;
+    padding: 0; }
+  /* line 337, ../sass/base.scss */
+  .sideList span {
+    color: #888780; }
+  /* line 340, ../sass/base.scss */
+  .sideList li {
+    margin: 0;
+    padding: 0.6em 0.5em;
+    line-height: 1.3em;
+    list-style-type: none;
+    background-color: #fbfbfa;
+    border-bottom: 1px solid #dbdbdb;
+    cursor: pointer;
+    color: #b0903a; }
+    /* line 351, ../sass/base.scss */
+    .sideList li:hover {
+      color: #917630;
+      background-color: white;
+      padding-left: .65em; }
+    /* line 357, ../sass/base.scss */
+    .sideList li.inactive {
+      color: #888780;
+      background-color: #f0f0f0;
+      cursor: default; }
+      /* line 363, ../sass/base.scss */
+      .sideList li.inactive:hover {
+        padding-left: .5em; }
+  /* line 368, ../sass/base.scss */
+  .sideList .currentNote {
+    background-color: #373d45;
+    color: #fff; }
+    /* line 371, ../sass/base.scss */
+    .sideList .currentNote:hover {
+      background-color: #373d45;
+      color: #fff; }
+  /* line 376, ../sass/base.scss */
+  .sideList .currentCat {
+    background-color: #373d45;
+    color: #fff; }
+    /* line 379, ../sass/base.scss */
+    .sideList .currentCat:hover {
+      background-color: #373d45;
+      color: #fff; }
+
+/* line 387, ../sass/base.scss */
+.listtitle {
+  font-family: "Droid Sans", sans-serif;
+  color: #888780;
+  margin: 0; }
+
+/* line 393, ../sass/base.scss */
+.sideheader {
+  color: #fff;
+  margin: 0; }
+
+/* line 398, ../sass/base.scss */
+.nextbtn {
+  float: right;
+  text-shadow: 0px 0px 4px rgba(250, 250, 250, 0.4); }
+
+/* line 403, ../sass/base.scss */
+.prevbtn {
+  color: #caac5d;
+  background-color: #fbffff; }
+  /* line 406, ../sass/base.scss */
+  .prevbtn:hover {
+    color: #a18224;
+    background-color: #fff; }
+
+/* line 412, ../sass/base.scss */
+.pageControls {
+  border-top: 1px solid #caac5d;
+  padding: 1em 0;
+  margin: 2em 0 0 0;
+  clear: both;
+  height: 125px; }
+
+/* line 420, ../sass/base.scss */
+.beer {
+  margin-left: -2em;
+  font-size: .7em;
+  text-transform: uppercase;
+  color: #cccccc; }
+
+/* line 426, ../sass/base.scss */
+.headerWrap {
+  width: 85%;
+  margin: 0 auto; }
+  /* line 429, ../sass/base.scss */
+  .headerWrap .closemsg {
+    margin: -0.7em 0 0 0;
+    float: right;
+    cursor: pointer;
+    color: #adbebc; }
+    /* line 434, ../sass/base.scss */
+    .headerWrap .closemsg:hover {
+      color: #caac5d; }
+
+/* line 439, ../sass/base.scss */
+.status {
+  position: fixed;
+  z-index: 40;
+  height: 5em;
+  line-height: 1.5em;
+  padding: .2em;
+  margin: 0 0 2em 0;
+  left: 0;
+  color: #adbebc;
+  font-size: .8em;
+  width: 100%;
+  background-color: #344059;
+  text-shadow: none;
+  box-shadow: 0 2px 10px #767676;
+  -moz-box-shadow: 0 2px 10px #767676;
+  -webkit-box-shadow: 0 2px 10px #767676; }
+  /* line 455, ../sass/base.scss */
+  .status .smallLogo {
+    padding: 0.6em 0 0 0; }
+  /* line 458, ../sass/base.scss */
+  .status .casename {
+    width: 70%;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #caac5d;
+    float: left;
+    padding: 0.7em 0 0 0; }
+  /* line 466, ../sass/base.scss */
+  .status .lessonTitle {
+    width: 70%;
+    padding-left: .2em;
+    float: left;
+    clear: both; }
+  /* line 472, ../sass/base.scss */
+  .status .chapter {
+    float: right; }
+    /* line 474, ../sass/base.scss */
+    .status .chapter a {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: .8em;
+      margin: 0 0.1em;
+      margin-top: -10px;
+      padding: 0.4em 0.6em; }
+      /* line 481, ../sass/base.scss */
+      .status .chapter a:hover {
+        background-color: #2c284d; }
+
+/* line 501, ../sass/base.scss */
+.leaving {
+  display: none;
+  width: 20em;
+  line-height: 1.4em;
+  text-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #344059;
+  color: #6962ac;
+  float: right;
+  position: fixed;
+  z-index: 40;
+  padding: 1.2em;
+  color: #fff;
+  font-size: .8em;
+  top: 6em;
+  right: 50px; }
+  /* line 518, ../sass/base.scss */
+  .leaving p {
+    margin: 0; }
+  /* line 521, ../sass/base.scss */
+  .leaving .yupnope {
+    float: left;
+    margin: 0.5em 0 0 1em;
+    color: #58481d;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px rgba(250, 250, 250, 0.5);
+    background-color: #caac5d;
+    padding: 0.3em 0.8em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+    /* line 534, ../sass/base.scss */
+    .leaving .yupnope:hover {
+      background-color: #a58636;
+      color: #58481d; }
+  /* line 539, ../sass/base.scss */
+  .leaving .yup {
+    float: left;
+    width: 45%;
+    text-align: center;
+    margin-left: 0; }
+  /* line 545, ../sass/base.scss */
+  .leaving .nope {
+    float: right;
+    width: 45%;
+    text-align: center; }
+
+/* line 552, ../sass/base.scss */
+span.prevbtn {
+  padding: 0 0 0 1em; }
+  /* line 553, ../sass/base.scss */
+  span.prevbtn a {
+    color: #caac5d; }
+    /* line 555, ../sass/base.scss */
+    span.prevbtn a:hover {
+      color: #b8963c; }
+
+/* line 560, ../sass/base.scss */
+.definition {
+  color: #caac5d;
+  cursor: pointer; }
+
+/* line 565, ../sass/base.scss */
+.popup {
+  z-index: 99;
+  font-size: .8em;
+  border: 12px solid white;
+  border: 12px solid rgba(255, 255, 255, 0.4);
+  -webkit-background-clip: padding-box;
+  /* for Safari */
+  background-clip: padding-box;
+  /* for IE9+, Firefox 4+, Opera, Chrome */
+  line-height: 1.4em;
+  text-shadow: none;
+  position: fixed;
+  width: 30%;
+  background-color: #333;
+  color: #e8eadc;
+  padding: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: none; }
+  /* line 583, ../sass/base.scss */
+  .popup span {
+    color: #caac5d; }
+
+/* line 587, ../sass/base.scss */
+.screen5 {
+  width: 600px;
+  cursor: pointer; }
+
+/* line 591, ../sass/base.scss */
+.hidepop {
+  cursor: pointer;
+  color: #caac5d;
+  font-weight: bold; }
+
+/* line 597, ../sass/base.scss */
+.footnote {
+  padding: 1em;
+  background-color: #f2f2f1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0px rgba(250, 250, 250, 0.3);
+  margin: 0 0 3em; }
+  /* line 603, ../sass/base.scss */
+  .footnote table {
+    font-weight: 400;
+    margin: 10px 0 0;
+    padding: 0.5em 1.2em; }
+    /* line 607, ../sass/base.scss */
+    .footnote table td {
+      vertical-align: top;
+      line-height: 1.4em;
+      font-size: 0.75em;
+      color: #777;
+      padding-left: 0; }
+  /* line 615, ../sass/base.scss */
+  .footnote h3 {
+    margin: 0;
+    color: #888780;
+    text-shadow: 1px 1px 0px rgba(250, 250, 250, 0.3); }
+  /* line 620, ../sass/base.scss */
+  .footnote a {
+    color: #caac5d; }
+    /* line 622, ../sass/base.scss */
+    .footnote a:hover {
+      color: #5a6e99; }
+  /* line 626, ../sass/base.scss */
+  .footnote em {
+    color: #344059; }
+
+/* line 631, ../sass/base.scss */
+.footnumber {
+  font-size: .7em;
+  vertical-align: super; }
+  /* line 633, ../sass/base.scss */
+  .footnumber a {
+    color: #999;
+    padding: 0 0.2em; }
+
+/* line 640, ../sass/base.scss */
+.lessonBody {
+  min-height: 300px;
+  margin-top: 1em;
+  line-height: 1.5em; }
+  /* line 644, ../sass/base.scss */
+  .lessonBody h1 {
+    margin: 0; }
+
+/* CHART STYLES ======================================================== */
+/* line 671, ../sass/base.scss */
+.chart {
+  z-index: 20;
+  position: absolute;
+  top: 1em;
+  background-color: #373d45;
+  width: 100%;
+  min-height: 38em;
+  padding: 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: none;
+  display: none; }
+  /* line 687, ../sass/base.scss */
+  .chart header {
+    border-bottom: 1px solid white; }
+    /* line 689, ../sass/base.scss */
+    .chart header span {
+      float: right;
+      display: block;
+      width: 20px;
+      height: 20px;
+      color: #373d45;
+      background-color: #fff;
+      line-height: 19px;
+      text-align: center;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer; }
+
+/* line 709, ../sass/base.scss */
+.library {
+  z-index: 20;
+  position: absolute;
+  top: 1em;
+  background-color: #373d45;
+  width: 100%;
+  min-height: 38em;
+  padding: 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: none;
+  display: none; }
+  /* line 725, ../sass/base.scss */
+  .library header {
+    border-bottom: 1px solid white; }
+    /* line 727, ../sass/base.scss */
+    .library header span {
+      float: right;
+      display: block;
+      width: 20px;
+      height: 20px;
+      color: #373d45;
+      background-color: #fff;
+      line-height: 19px;
+      text-align: center;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer; }
+
+/* line 743, ../sass/base.scss */
+.pdfitem, .linkitem {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 0.75em center;
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  display: block;
+  padding: 0.5em 0.5em 0.5em 3.5em;
+  margin: 0.5em 0 0 0;
+  color: black;
+  cursor: pointer; }
+  /* line 754, ../sass/base.scss */
+  .pdfitem a p, .linkitem a p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.85em;
+    color: #373d45; }
+  /* line 760, ../sass/base.scss */
+  .pdfitem a h5, .linkitem a h5 {
+    padding: 0;
+    margin: 0.2em 0 -0.2em 0;
+    font-size: 1em;
+    color: #888780; }
+
+/* line 768, ../sass/base.scss */
+.pdfitem {
+  background-image: url("../img/pdficon2.png"); }
+
+/* line 771, ../sass/base.scss */
+.linkitem {
+  background-image: url("../img/linkicon2.png"); }
+
+/* line 775, ../sass/base.scss */
+.openUp {
+  right: -1em; }
+
+/* line 780, ../sass/base.scss */
+.lessonBody h3 {
+  color: #373d45;
+  font-size: 1.27em;
+  margin: 0.5em 0 0.2em;
+  padding-bottom: 0em; }
+/* line 786, ../sass/base.scss */
+.lessonBody h4 {
+  color: #373d45;
+  margin: 0.5em 0 0em;
+  padding-bottom: 0em; }
+
+/* Make me whole again! */
+/* line 5, ../sass/reference.scss */
+.insetShadow, .miniStatus, .miniStatus .activeBlock {
+  -moz-box-shadow: inset 0 0 7px #c1c1c1;
+  -webkit-box-shadow: inset 0 0 7px #c1c1c1;
+  box-shadow: inset 0 0 7px #c1c1c1; }
+
+/* line 11, ../sass/reference.scss */
+.clear {
+  clear: both; }
+
+/* line 20, ../sass/reference.scss */
+.questionWrap {
+  display: table;
+  margin-top: 1.5em;
+  clear: both; }
+
+/* line 25, ../sass/reference.scss */
+.videoChoices {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle; }
+
+/* line 32, ../sass/reference.scss */
+.videoQuestion {
+  width: 32%;
+  display: inline-block;
+  float: left;
+  line-height: 1.2em;
+  min-height: 10em;
+  background-color: #caac5d;
+  padding: 0.7em 1em;
+  color: #58481d;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 45, ../sass/reference.scss */
+  .videoQuestion a {
+    color: #58481d; }
+    /* line 47, ../sass/reference.scss */
+    .videoQuestion a:hover {
+      color: #58481d; }
+  /* line 51, ../sass/reference.scss */
+  .videoQuestion:hover {
+    color: #453816;
+    background-color: #b8963c; }
+  /* line 55, ../sass/reference.scss */
+  .videoQuestion.currVid {
+    color: #453816;
+    background-color: #a58636; }
+
+/* line 60, ../sass/reference.scss */
+.firstVid {
+  margin: 0 2% 0 0;
+  float: left; }
+
+/* line 64, ../sass/reference.scss */
+.lastVid {
+  margin: 0 0 0 2%;
+  float: right; }
+
+/* line 68, ../sass/reference.scss */
+.videoPlace {
+  position: relative; }
+  /* line 70, ../sass/reference.scss */
+  .videoPlace ul {
+    margin: 0;
+    padding: 1.5em 0.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    color: #fff;
+    opacity: 0.99;
+    height: 95%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  /* line 82, ../sass/reference.scss */
+  .videoPlace li {
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 1em 1.5em;
+    background-color: #000; }
+  /* line 89, ../sass/reference.scss */
+  .videoPlace ::-webkit-scrollbar {
+    width: 12px; }
+  /* line 94, ../sass/reference.scss */
+  .videoPlace ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #333; }
+  /* line 100, ../sass/reference.scss */
+  .videoPlace ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: #cccccc; }
+
+/* line 107, ../sass/reference.scss */
+.vidWSummary {
+  position: relative; }
+  /* line 109, ../sass/reference.scss */
+  .vidWSummary .play {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    height: 98%;
+    width: 100%; }
+    /* line 115, ../sass/reference.scss */
+    .vidWSummary .play img {
+      display: none;
+      box-shadow: none; }
+  /* line 120, ../sass/reference.scss */
+  .vidWSummary .summary {
+    color: #fff;
+    position: absolute;
+    top: 8%;
+    padding: 0 3%;
+    height: 81%;
+    width: 100%;
+    overflow-y: scroll;
+    display: none;
+    background-color: #000;
+    text-shadow: 0 0 0 black; }
+  /* line 133, ../sass/reference.scss */
+  .vidWSummary ::-webkit-scrollbar {
+    width: 12px; }
+  /* line 138, ../sass/reference.scss */
+  .vidWSummary ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #333; }
+  /* line 144, ../sass/reference.scss */
+  .vidWSummary ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: #cccccc; }
+
+/* line 152, ../sass/reference.scss */
+.playVid {
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #fff;
+  text-shadow: none; }
+
+/* line 160, ../sass/reference.scss */
+.patientintro {
+  float: right;
+  width: 60%; }
+
+/* line 165, ../sass/reference.scss */
+.further {
+  width: 100%;
+  color: #888780;
+  border-top: 1px solid #caac5d;
+  padding: 1.2em 0 0 0;
+  margin-top: 1.5em;
+  clear: both; }
+  /* line 171, ../sass/reference.scss */
+  .further h4, .further h5 {
+    margin: 0 0 0.5em 0; }
+  /* line 174, ../sass/reference.scss */
+  .further strong {
+    font-size: .8em; }
+  /* line 177, ../sass/reference.scss */
+  .further ul {
+    padding: 0;
+    list-style-type: none; }
+  /* line 181, ../sass/reference.scss */
+  .further ol {
+    padding: 0 0 0 1em;
+    margin-top: 0; }
+  /* line 185, ../sass/reference.scss */
+  .further li {
+    font-size: .8em;
+    margin: 0 0 0.5em 0; }
+
+/* line 192, ../sass/reference.scss */
+.stopthinkHeader {
+  padding: 0;
+  margin: 0;
+  height: 40px; }
+  /* line 197, ../sass/reference.scss */
+  .stopthinkHeader h2 {
+    color: #c63d22;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    line-height: 40px; }
+  /* line 203, ../sass/reference.scss */
+  .stopthinkHeader img {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    line-height: 40px; }
+
+/* line 211, ../sass/reference.scss */
+.twocolumns {
+  font-size: 1.2em;
+  margin: 2em 0; }
+  /* line 214, ../sass/reference.scss */
+  .twocolumns th {
+    text-align: left;
+    padding: 0.5em 1em;
+    margin-right: .3em; }
+  /* line 219, ../sass/reference.scss */
+  .twocolumns .middle {
+    width: 2%;
+    padding: 0;
+    margin: 0; }
+  /* line 224, ../sass/reference.scss */
+  .twocolumns td {
+    width: 49%;
+    line-height: 1.3em;
+    padding: 1.5em 2em 1.5em 1em;
+    border-bottom: 1px solid #888780;
+    vertical-align: top; }
+  /* line 231, ../sass/reference.scss */
+  .twocolumns th.dont {
+    color: #666;
+    border-bottom: 2px solid #666666;
+    padding: 0 0 0.2em 0.75em;
+    margin: 0; }
+  /* line 237, ../sass/reference.scss */
+  .twocolumns th.do {
+    color: #6e9f27;
+    border-bottom: 2px solid #6e9f27;
+    padding: 0 0 0.2em 0.75em;
+    margin: 0; }
+  /* line 243, ../sass/reference.scss */
+  .twocolumns td.do {
+    background-color: #cef4b9; }
+  /* line 246, ../sass/reference.scss */
+  .twocolumns td.dont {
+    text-shadow: none;
+    background-color: #ddd;
+    color: #333; }
+
+/* line 253, ../sass/reference.scss */
+.twoColStandard {
+  width: 100%;
+  font-size: 0.8em;
+  display: inline-block; }
+  /* line 257, ../sass/reference.scss */
+  .twoColStandard h2, .twoColStandard h3 {
+    text-transform: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+    color: #453717; }
+  /* line 263, ../sass/reference.scss */
+  .twoColStandard ol {
+    padding-left: 0;
+    margin-top: 0.5em;
+    list-style-type: none; }
+    /* line 267, ../sass/reference.scss */
+    .twoColStandard ol li {
+      line-height: 1.3em;
+      margin: 0.75em 0 0.5em 0;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #ddd9b3; }
+      /* line 272, ../sass/reference.scss */
+      .twoColStandard ol li:last {
+        border-bottom: none; }
+  /* line 277, ../sass/reference.scss */
+  .twoColStandard ul {
+    margin: 0 -2em;
+    list-style-type: none; }
+    /* line 280, ../sass/reference.scss */
+    .twoColStandard ul li {
+      border-bottom: 1px dotted #888780; }
+  /* line 284, ../sass/reference.scss */
+  .twoColStandard .col1 {
+    width: 49%;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 1.5em; }
+  /* line 291, ../sass/reference.scss */
+  .twoColStandard .col2 {
+    width: 49%;
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 1.5em; }
+
+/* line 300, ../sass/reference.scss */
+.accordionItem {
+  text-shadow: none;
+  width: 100%;
+  padding: .6em;
+  margin: 0 0 0.3em 0;
+  background-color: #e8e8cc;
+  font-size: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out; }
+  /* line 310, ../sass/reference.scss */
+  .accordionItem .accToggle {
+    cursor: pointer;
+    color: #bb9d4e;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.2em 0 0 1.5em;
+    height: 1.5em;
+    line-height: 1em; }
+    /* line 319, ../sass/reference.scss */
+    .accordionItem .accToggle:before {
+      display: block;
+      float: left;
+      height: 0.8em;
+      width: 0.8em;
+      text-align: center;
+      line-height: 0.9em;
+      font-size: 1.2em;
+      color: #453717;
+      content: "+";
+      padding: 0.1em 0.05em 0.05em 0.1em;
+      margin: -0.1em -0.3em 0 -1.3em;
+      background-color: #bb9d4e;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px; }
+  /* line 335, ../sass/reference.scss */
+  .accordionItem .accToggle.isOpen:before {
+    content: "-";
+    line-height: 0.7em;
+    color: #fff; }
+  /* line 340, ../sass/reference.scss */
+  .accordionItem .adverseFX {
+    display: none;
+    padding: 0 0 1em 0; }
+    /* line 343, ../sass/reference.scss */
+    .accordionItem .adverseFX p {
+      padding: 0 0 0 1.9em;
+      margin: 0;
+      line-height: 1.5em; }
+    /* line 348, ../sass/reference.scss */
+    .accordionItem .adverseFX h3 {
+      background-color: #bb9d4e;
+      font-size: 1em;
+      color: #fff;
+      padding: 0.2em;
+      margin: 0.5em 0 0.5em 0; }
+    /* line 355, ../sass/reference.scss */
+    .accordionItem .adverseFX ul {
+      margin: 0 0 1em 1em;
+      padding: 0 0 0 1.5em;
+      list-style-type: disc; }
+      /* line 359, ../sass/reference.scss */
+      .accordionItem .adverseFX ul li {
+        line-height: 1.3em;
+        margin-bottom: 0.5em; }
+  /* line 365, ../sass/reference.scss */
+  .accordionItem .accBox {
+    display: none;
+    padding: 0 1.3em 0 0; }
+    /* line 368, ../sass/reference.scss */
+    .accordionItem .accBox p {
+      padding: 0 0 1em;
+      margin: 0 0 0 1.5em;
+      line-height: 1.3em; }
+    /* line 373, ../sass/reference.scss */
+    .accordionItem .accBox ul {
+      margin: 0 0 1em 1em;
+      padding: 0 0 0 1.5em;
+      list-style-type: disc; }
+      /* line 377, ../sass/reference.scss */
+      .accordionItem .accBox ul li {
+        line-height: 1.3em;
+        margin-bottom: 0.5em; }
+  /* line 383, ../sass/reference.scss */
+  .accordionItem .accBox2Col {
+    display: none;
+    padding: 0 0.5em 0 0; }
+    /* line 386, ../sass/reference.scss */
+    .accordionItem .accBox2Col .left {
+      width: 47%;
+      float: left; }
+    /* line 390, ../sass/reference.scss */
+    .accordionItem .accBox2Col .right {
+      width: 47%;
+      float: right; }
+    /* line 394, ../sass/reference.scss */
+    .accordionItem .accBox2Col h3 {
+      background-color: #bb9d4e;
+      font-size: 1em;
+      color: #fff;
+      padding: 0.2em 0.2em 0.2em 0.5em;
+      margin: 0.5em 0 0.5em 0; }
+    /* line 401, ../sass/reference.scss */
+    .accordionItem .accBox2Col p {
+      padding: 0 0 0 0.5em;
+      margin: 0;
+      line-height: 1.5em; }
+
+/* line 409, ../sass/reference.scss */
+.accordion {
+  font-size: 1.0em;
+  margin-top: .7em;
+  clear: both; }
+
+/* line 412, ../sass/reference.scss */
+.openBG {
+  background-color: #e6e6e6; }
+  /* line 414, ../sass/reference.scss */
+  .openBG .accToggle {
+    color: #453717; }
+    /* line 416, ../sass/reference.scss */
+    .openBG .accToggle::before {
+      background-color: #453717; }
+
+/* line 422, ../sass/reference.scss */
+.radioButtons {
+  padding: 1em 0 0 1.5em;
+  margin-left: 2em; }
+  /* line 425, ../sass/reference.scss */
+  .radioButtons h3 {
+    margin-left: -1.6em; }
+  /* line 428, ../sass/reference.scss */
+  .radioButtons label {
+    line-height: 1em;
+    font-size: 1em;
+    margin-bottom: 15px;
+    vertical-align: 0.4em;
+    float: left; }
+  /* line 436, ../sass/reference.scss */
+  .radioButtons input {
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0px 5px 5px 0; }
+  /* line 442, ../sass/reference.scss */
+  .radioButtons button {
+    display: block; }
+  /* line 445, ../sass/reference.scss */
+  .radioButtons .styledRadio {
+    display: inline-block;
+    margin-right: 0.3em;
+    margin-left: -1.9em; }
+
+/* line 452, ../sass/reference.scss */
+.checkboxes {
+  padding: 1em 0 0 1.5em;
+  margin-left: 2em; }
+  /* line 455, ../sass/reference.scss */
+  .checkboxes h3 {
+    margin-left: -1.6em; }
+  /* line 458, ../sass/reference.scss */
+  .checkboxes label {
+    line-height: 0.1em;
+    font-size: 1em;
+    vertical-align: 0.4em;
+    padding-right: 3.5em; }
+  /* line 465, ../sass/reference.scss */
+  .checkboxes button {
+    display: block; }
+  /* line 468, ../sass/reference.scss */
+  .checkboxes .styledCheckbox {
+    display: inline-block;
+    margin-right: 0.3em;
+    margin-left: -1.9em; }
+
+/* line 475, ../sass/reference.scss */
+.progNote {
+  min-width: 30em;
+  margin: 2em;
+  padding: 2em;
+  color: #333;
+  background-color: #fef9df; }
+  /* line 483, ../sass/reference.scss */
+  .progNote p, .progNote li {
+    font-family: radley, serif;
+    line-height: 1.2em;
+    padding-bottom: .5em; }
+  /* line 488, ../sass/reference.scss */
+  .progNote ul {
+    margin: 0 0 1em 0; }
+  /* line 491, ../sass/reference.scss */
+  .progNote h3 {
+    margin: 0 0 0.5em 0;
+    color: #453717;
+    font-family: questrial, serif;
+    font-size: 1em; }
+  /* line 497, ../sass/reference.scss */
+  .progNote h4 {
+    font-family: questrial, serif;
+    font-size: 0.85em;
+    color: #786129;
+    margin: 0;
+    padding: 0;
+    font-weight: 700; }
+    /* line 504, ../sass/reference.scss */
+    .progNote h4 span {
+      color: #000;
+      font-family: radley, serif;
+      font-weight: 700; }
+
+/* line 512, ../sass/reference.scss */
+.refer {
+  padding-bottom: 1em; }
+
+/* line 516, ../sass/reference.scss */
+.letterhead {
+  height: 4em;
+  position: relative;
+  display: table;
+  margin: 0 auto; }
+  /* line 521, ../sass/reference.scss */
+  .letterhead img {
+    float: left;
+    position: absolute;
+    top: -1em; }
+  /* line 527, ../sass/reference.scss */
+  .letterhead h2 {
+    padding: 1.2em 0 0 2.5em;
+    color: #786129;
+    font-family: questrial, serif;
+    font-size: 1em;
+    text-transform: uppercase; }
+  /* line 534, ../sass/reference.scss */
+  .letterhead span {
+    color: #3a2f14;
+    font-size: .85em;
+    text-transform: none; }
+
+/* line 541, ../sass/reference.scss */
+.branchLoc {
+  margin: 0 0 0.8em 0;
+  color: #bdbfb7;
+  font-style: italic;
+  font-size: 1em; }
+
+/* line 549, ../sass/reference.scss */
+.miniStatus {
+  width: 100%;
+  height: 2em;
+  color: #a1a09a;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  background-color: #ebebe9;
+  font-size: .7em; }
+  /* line 557, ../sass/reference.scss */
+  .miniStatus .statusBlock {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 1.9em;
+    width: 25%;
+    display: inline-block;
+    float: left; }
+  /* line 565, ../sass/reference.scss */
+  .miniStatus .activeBlock {
+    box-shadow: none;
+    color: #61605b;
+    background-color: #caac5d; }
+  /* line 572, ../sass/reference.scss */
+  .miniStatus .miniNumbers {
+    font-size: .8em; }
+
+/* line 577, ../sass/reference.scss */
+.branches {
+  background-color: #b9b9b5;
+  clear: both;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  /* line 583, ../sass/reference.scss */
+  .branches ul {
+    padding-left: 0; }
+  /* line 584, ../sass/reference.scss */
+  .branches li.branchStatus {
+    height: 3em; }
+
+/* line 589, ../sass/reference.scss */
+ul.faux {
+  padding: 0.3em 1.2em; }
+  /* line 590, ../sass/reference.scss */
+  ul.faux li {
+    padding: 0.2em 0 1em 0;
+    list-style-image: url("../img/arrowBullet.png"); }
+  /* line 594, ../sass/reference.scss */
+  ul.faux h3 {
+    padding: 0;
+    margin: 0;
+    vertical-align: top; }
+
+/* line 602, ../sass/reference.scss */
+.fauxbranch {
+  margin: 0;
+  display: inline-block;
+  font-size: .9em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  float: left;
+  height: 13em;
+  width: 22%;
+  padding: .8em;
+  line-height: 1.3em;
+  background-color: #bdbfb7;
+  margin: 0 0.5em 0 0; }
+  /* line 614, ../sass/reference.scss */
+  .fauxbranch h2, .fauxbranch h3, .fauxbranch span {
+    font-size: 1.1em;
+    margin-bottom: .2em; }
+  /* line 618, ../sass/reference.scss */
+  .fauxbranch .fauxhead {
+    margin: 0 0 0.5em 0;
+    font-weight: bold; }
+
+/* line 625, ../sass/reference.scss */
+.letter .hidepop {
+  color: #a58636;
+  font-weight: 800; }
+/* line 629, ../sass/reference.scss */
+.letter img {
+  box-shadow: none; }
+
+/* line 634, ../sass/reference.scss */
+.ui-widget-content {
+  color: #373d45; }
+
+/* line 637, ../sass/reference.scss */
+.ttStyles {
+  font-size: .8em;
+  line-height: 1.4em;
+  padding: 1em; }
+
+/* line 646, ../sass/reference.scss */
+.cap2 {
+  font-size: .8em;
+  line-height: 1.3em;
+  padding: 0 0 1.5em 0; }
+
+/* line 655, ../sass/reference.scss */
+.andBox div {
+  padding: 1em;
+  background-color: #ddd; }
+/* line 659, ../sass/reference.scss */
+.andBox p {
+  text-align: center;
+  font-weight: bold; }
+
+/* line 667, ../sass/reference.scss */
+.ui-dialog .ui-dialog-title {
+  text-shadow: none; }
+
+/* line 682, ../sass/reference.scss */
+.library {
+  line-height: 1.3em; }
+  /* line 684, ../sass/reference.scss */
+  .library .thelink {
+    padding: 0 0 0.6em 0; }
